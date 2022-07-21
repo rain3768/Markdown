@@ -945,3 +945,34 @@ function()
 ```
 
 **程序11.1c  使用错误检查分配器**
+
+## 十四、实现多键位输入
+
+```c
+#define KEY_DOWN(VK_NONAME) ((GetAsyncKeyState(VK_NONAME) & 0x8000) ? 1:0)
+```
+
+搭配虚拟键值表使用，此宏定义可以实现同时输入。
+
+## 十五、easyx颜色
+
+```c
+常量				值		 颜色
+BLACK			0			黑
+BLUE			0xAA0000	蓝
+GREEN			0x00AA00	绿
+CYAN			0xAAAA00	青
+RED				0x0000AA	红
+MAGENTA			0xAA00AA	紫
+BROWN			0x0055AA	棕
+LIGHTGRAY		0xAAAAAA	浅灰
+DARKGRAY		0x555555	深灰
+LIGHTBLUE		0xFF5555	亮蓝
+LIGHTGREEN		0x55FF55	亮绿
+LIGHTCYAN		0xFFFF55	亮青
+LIGHTRED		0x5555FF	亮红
+LIGHTMAGENTA	0xFF55FF	亮紫
+YELLOW			0x55FFFF	黄
+WHITE			0xFFFFFF	白
+```
+
